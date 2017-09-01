@@ -1,14 +1,14 @@
 %global chromium_path /opt/chromium-browser
 
 Name:		chromium
-Version:	52.0.2743.0
+Version:	60.0.3110.2
 Release:	1%{?dist}
 Summary:	A WebKit powered web browser
 
 License:	BSD and LGPLv2+
 Group:		Applications/Internet
 
-Source0:	Linux_x64-394941-chrome-linux.zip
+Source0:	Linux_x64-474499-chrome-linux.zip
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -40,5 +40,8 @@ rm -rf %{buildroot}
 %{_bindir}/chromium-browser
 
 %changelog
+* Thu Aug 31 2017 Anh Nguyen <anh.nguyen@gooddata.com> - 60.0.3110.2
+- QA-6634 Build new package v60.0.3110.2
+
 * Wed Aug 24 2016 Hung Cao Hiep <hung.cao@gooddata.com> - 52.0.2743.0
 - PAAS-5602 Build new package v52.0.2743.0
