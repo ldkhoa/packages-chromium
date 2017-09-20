@@ -1,14 +1,14 @@
 %global chromium_path /opt/chromium-browser
 
 Name:		chromium
-Version:	58.0.3029.114
+Version:	54.0.2839.0
 Release:	1%{?dist}
 Summary:	A WebKit powered web browser
 
 License:	BSD and LGPLv2+
 Group:		Applications/Internet
 
-Source0:	Linux_x64-454471-chrome-linux.zip
+Source0:	Linux_x64-414243-chrome-linux.zip
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -40,6 +40,9 @@ rm -rf %{buildroot}
 %{_bindir}/chromium-browser
 
 %changelog
+* Wed Sep 20 2017 Khoa Le <khoa.le@gooddata.com> - 56.0.2916.0
+- QA-6742 Build new package 56.0.2916.0
+
 * Wed Sep 06 2017 Anh Nguyen <anh.nguyen@gooddata.com> - 58.0.3029.114
 - QA-6634 Build new package v58.0.3029.114
 
